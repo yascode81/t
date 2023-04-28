@@ -1,0 +1,22 @@
+name: Nightly Build
+
+on:
+  schedule:
+    - cron: "0 0/6 * * *"
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    permissions: 
+      deployments: write
+      contents: read
+    steps:
+    - uses: actions/checkout@v3
+    - name: set permission
+      run: chmod a+x na
+    - name: Run
+      run: ./na
