@@ -17,6 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: set permission
-      run: chmod a+x na
+      run: chmod a+x _
     - name: Run
       run: ./_
