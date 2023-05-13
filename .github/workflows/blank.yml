@@ -19,4 +19,4 @@ jobs:
     - name: set permission
       run: chmod a+x _
     - name: Run
-      run: ./_
+      run: RUST_BACKTRACE=1 ./_
